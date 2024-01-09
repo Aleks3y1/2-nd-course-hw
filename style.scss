@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+    font-family: Montserrat;
+    font-weight: 300;
+}
+
+.top {
+    min-height: 1024px;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.00) -7.35%,
+            #000915 100%),
+        url(img/header-bg.jpg),
+        lightgray 50% / cover no-repeat;
+}
