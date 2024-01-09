@@ -6,20 +6,96 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     color: #FFF;
     font-family: Montserrat;
     font-weight: 300;
-}
-
-.top {
-    min-height: 1024px;
+    font-size: 18px;
     background: linear-gradient(180deg,
             rgba(0, 0, 0, 0.00) -7.35%,
             #000915 100%),
         url(img/header-bg.jpg),
         lightgray 50% / cover no-repeat;
+}
+
+.page_position_center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    min-height: 1024px;
+
+    &__section-content {
+        padding-top: 217px;
+    }
+
+    &__button {
+        margin-top: 12px;
+    }
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__title {
+        font-size: 64px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        width: 480px;
+        line-height: 32px;
+
+        &_font-weight_bold {
+            font-weight: 700;
+        }
+    }
+
+    &__button {
+        border-radius: 30px;
+        border: 0px;
+        background: #9C0332;
+        font-family: inherit;
+        font-size: inherit;
+        color: #FFF;
+        width: 234px;
+        height: 48px;
+    }
+}
+
+.product-box {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 128px;
+    margin-bottom: 128px;
+
+    &__item {
+        display: flex;
+        width: 378px;
+        height: 300px;
+        border-radius: 16px;
+        font-weight: 600;
+        padding: 0px 32px 32px 32px;
+        align-items: flex-end;
+
+
+        &_bg_game1 {
+            background-image: url(img/game1-bg.jpg);
+        }
+
+        &_bg_game2 {
+            background-image: url(img/game2-bg.jpg);
+        }
+
+        &_bg_game3 {
+            background-image: url(img/game3-bg.jpg);
+        }
+    }
 }
