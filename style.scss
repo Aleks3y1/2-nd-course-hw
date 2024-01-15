@@ -21,7 +21,7 @@ body {
         lightgray 50% / cover no-repeat;
 }
 
-.page_position_center {
+.page-position_center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
@@ -77,25 +77,30 @@ body {
     margin-bottom: 128px;
 
     &__item {
-        display: flex;
         width: 378px;
         height: 300px;
         border-radius: 16px;
         font-weight: 600;
         padding: 0px 32px 32px 32px;
-        align-items: flex-end;
 
 
-        &_bg_game1 {
+        &_bg-game1 {
             background-image: url(img/game1-bg.jpg);
         }
 
-        &_bg_game2 {
+        &_bg-game2 {
             background-image: url(img/game2-bg.jpg);
         }
 
-        &_bg_game3 {
+        &_bg-game3 {
             background-image: url(img/game3-bg.jpg);
         }
+    }
+
+    &__link {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
     }
 }
