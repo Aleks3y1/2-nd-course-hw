@@ -17,7 +17,7 @@ alert(+(num1) - +(num2));
 alert(+(num1) * +(num2));
 alert(+(num1) / +(num2));
 // Задание 5
-let result = 2**5;
+let result = 2 ** 5;
 alert(result);
 // Задание 6
 a = 9;
@@ -36,7 +36,7 @@ alert(num);
 let age = prompt("Сколько вам лет?");
 // Задание 9.0
 const user = {
-    name : 'Пётр',
+    name: 'Пётр',
     age: 21,
     isAdmin: true
 }
