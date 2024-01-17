@@ -53,3 +53,4 @@ alert(user[info]);
 let name = prompt('Name?');
 alert(`Привет, ${name}!`);
 
+// Готово
