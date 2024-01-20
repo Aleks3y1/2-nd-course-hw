@@ -72,6 +72,10 @@ body {
         width: 234px;
         height: 48px;
     }
+    &__button:hover {
+        background: #792020;
+        transition: all 0.3s;
+    }
 }
 
 

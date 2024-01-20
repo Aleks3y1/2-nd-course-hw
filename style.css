@@ -63,6 +63,10 @@ body {
   width: 234px;
   height: 48px;
 }
+.section-content__button:hover {
+  background: #792020;
+  transition: all 0.3s;
+}
 
 .product-box {
   display: flex;
