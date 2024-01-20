@@ -1,0 +1,36 @@
+@media (max-width: 376px) {
+    .section-content {
+        align-items: center;
+        text-align: center;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__subtitle {
+            width: auto;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__button {
+            margin: 0;
+        }
+    }
+
+    .page-position_center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        min-height: 735px;
+    }
+
+    .product-box {
+        &__item {
+            padding: 0px 16px 32px 16px;
+            width: 343px;
+        }
+    }
+}

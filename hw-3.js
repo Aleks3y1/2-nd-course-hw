@@ -98,23 +98,24 @@ if (clientOS) {
     console.log('Установите версию приложения для iOS по ссылке');
 }
 //2 вариант
-const clientOS = navigator.userAgent.toLowerCase().match(/iphone/i);
+/*const clientOS = navigator.userAgent.toLowerCase().match(/iphone/i);
 
 if (!clientOS) {
     alert('Установите версию приложения для iOS по ссылке');
 } else {
     alert('Установите версию приложения для Android по ссылке');
 }
+*/
 
 //h9
-let clientOS = Math.round(Math.random());
+let clientsOS = Math.round(Math.random());
 let clientDeviceYear = +(prompt('Год выпуска вашего смартфона?', ''));
 
-if (!clientOS && clientDeviceYear >= 2015) {
+if (!clientsOS && clientDeviceYear >= 2015) {
     alert('Установите версию приложения для iOS по ссылке');
-} else if (!clientOS) {
+} else if (!clientsOS) {
     alert('Установите облегченную версию приложения для iOS по ссылке');
-} else if (clientOS && clientDeviceYear >= 2015) {
+} else if (clientsOS && clientDeviceYear >= 2015) {
     alert('Установите версию приложения для Android по ссылке');
 } else {
     alert('Установите облегченную версию приложения для Android по ссылке');
