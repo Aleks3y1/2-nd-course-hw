@@ -72,6 +72,7 @@ body {
         width: 234px;
         height: 48px;
     }
+
     &__button:hover {
         background: #792020;
         transition: all 0.3s;
@@ -83,6 +84,7 @@ body {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 128px;
     margin-bottom: 128px;
 

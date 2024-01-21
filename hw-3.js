@@ -1,6 +1,6 @@
 // h1
 let password = 'пароль';
-let userPassword = String(prompt('Введите пароль', 'На русском'));
+let userPassword = prompt('Введите пароль', 'На русском');
 
 if (userPassword == password) {
     alert('Пароль введен верно');
@@ -40,40 +40,24 @@ let monthNumber = prompt('Ведите число от 1 до 12');
 
 switch (monthNumber) {
     case '1':
-        alert('Январь');
-        break;
     case '2':
-        alert('Февраль');
+    case '12':
+        alert('Зима');
         break;
     case '3':
-        alert('Март');
-        break;
     case '4':
-        alert('Апрель');
-        break;
     case '5':
-        alert('Май');
+        alert('Весна');
         break;
     case '6':
-        alert('Июнь');
-        break;
     case '7':
-        alert('Июль');
-        break;
     case '8':
-        alert('Август');
+        alert('Лето');
         break;
     case '9':
-        alert('Сентябрь');
-        break;
     case '10':
-        alert('Октябрь');
-        break;
     case '11':
-        alert('Ноябрь');
-        break;
-    case '12':
-        alert('Декабрь');
+        alert('Осень');
         break;
     default: alert('Поддерживается только числа от 1 до 12!');
         break;
