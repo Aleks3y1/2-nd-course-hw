@@ -1,0 +1,71 @@
+@media (max-width: 1440px) {
+    .page-position_center {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+@media (max-width: 1028px) {
+    .page-position_center {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .section-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: #000915;
+    }
+
+    .section-content {
+        align-items: center;
+        text-align: center;
+
+        &__title {
+            font-size: 32px;
+        }
+
+        &__subtitle {
+            width: 343px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__button {
+            margin: 0;
+        }
+    }
+
+    .page-position_center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        min-height: 735px;
+    }
+
+    .product-box {
+        &__item {
+            padding: 0px 16px 32px 16px;
+            width: 343px;
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    body {
+        background-image: none;
+    }
+
+    .top {
+        min-height: 735px;
+        background-image: url(img/bg-mobile.jpg);
+    }
+}

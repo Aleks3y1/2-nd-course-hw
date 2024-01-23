@@ -72,12 +72,19 @@ body {
         width: 234px;
         height: 48px;
     }
+
+    &__button:hover {
+        background: #792020;
+        transition: all 0.3s;
+    }
 }
+
 
 .product-box {
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 128px;
     margin-bottom: 128px;
 
@@ -91,14 +98,32 @@ body {
 
         &_bg-game1 {
             background-image: url(img/game1-bg.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &_bg-game1:hover {
+            transform: scale(1.05);
+            transition: all 0.6s ease;
         }
 
         &_bg-game2 {
             background-image: url(img/game2-bg.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &_bg-game2:hover {
+            transform: scale(1.05);
+            transition: all 0.6s ease;
         }
 
         &_bg-game3 {
             background-image: url(img/game3-bg.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &_bg-game3:hover {
+            transform: scale(1.05);
+            transition: all 0.6s ease;
         }
     }
 
@@ -107,5 +132,9 @@ body {
         width: 100%;
         display: flex;
         align-items: flex-end;
+        font-size: 24px;
+        line-height: 32px;
     }
 }
+
+@import "mobile";
