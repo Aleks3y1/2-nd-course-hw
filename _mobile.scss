@@ -5,6 +5,19 @@
     }
 }
 
+@media (max-width: 1316px) {
+    .seasons-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .seasons-box__content {
+        align-items: center;
+    }
+    
+}
+
 @media (max-width: 1028px) {
     .page-position_center {
         padding-left: 60px;
@@ -15,6 +28,11 @@
         align-items: center;
         text-align: center;
     }
+
+    .seasons-box__content {
+        align-items: center;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -56,6 +74,36 @@
             padding: 0px 16px 32px 16px;
             width: 343px;
         }
+    }
+
+    .seasons-box {
+        height: auto;
+    }
+
+    .seasons-box__content {
+        width: auto;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    .seasons-box__title {
+        font-size: 32px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .seasons-box__subtitle {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        width: 343px;
+    }
+
+    .seasons-box__image {
+        min-width: 344px;
+        min-height: 236px;
+        margin-bottom: 84px;
     }
 }
 

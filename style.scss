@@ -137,4 +137,33 @@ body {
     }
 }
 
+.seasons-box {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.seasons-box__content {
+    width: 584px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+.seasons-box__title {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.seasons-box__image {
+    background: url(img/seasons.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 485px;
+    min-height: 333px;
+}
+
+
 @import "mobile";
