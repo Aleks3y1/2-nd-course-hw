@@ -32,7 +32,7 @@ const ageUser = () => {
 
 //h5
 const numberOrNan = (a, b) => {
-    return (!Number.isNaN(a) && !Number.isNaN(b)) ? a * b : 'Одно или оба значения не являются числом';
+    return (!isNaN(a) && !isNaN(b)) ? a * b : 'Одно или оба значения не являются числом';
 }
 
 //h6
@@ -43,24 +43,26 @@ const cube = () => {
 }
 
 //h7
+function getAreaResult() {
+    return (Math.PI * (this.radius ** 2));
+}
+
+function getPerimeterResult() {
+    return (2 * Math.PI * this.radius);
+}
+
 const circle1 = {
     radius: 3,
-    getArea() {
-        return 3.14 * (this.radius *= this.radius);
-    },
-    getPerimeter() {
-        return 2 * 3.14 * this.radius;
-    }
+
+    getArea: getAreaResult,
+    getPerimeter: getPerimeterResult,
 }
 
 const circle2 = {
     radius: 3,
-    getArea() {
-        return 3.14 * (this.radius *= this.radius);
-    },
-    getPerimeter() {
-        return 2 * 3.14 * this.radius;
-    }
+
+    getArea: getAreaResult,
+    getPerimeter: getPerimeterResult,
 }
 
 //h8
@@ -69,14 +71,14 @@ function seasonsGame() {
     let monthNumber = +(prompt('Ведите число от 1 до 12'));
 
     if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {
-        alert('Зима');
+        return 'Зима';
     } else if (monthNumber === 3 || monthNumber === 4 || monthNumber === 5) {
-        alert('Весна');
+        return 'Весна';
     } else if (monthNumber === 6 || monthNumber === 7 || monthNumber === 8) {
-        alert('Лето');
+    return 'Лето';
     } else if (monthNumber === 9 || monthNumber === 10 || monthNumber === 11) {
-        alert('Осень');
+        return 'Осень';
     } else {
-        alert('Поддерживается только числа от 1 до 12!');
+        return 'Поддерживается только числа от 1 до 12!';
     }
 }
