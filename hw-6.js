@@ -1,10 +1,10 @@
 //h1
 const num = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < num.length; i++) {
+    console.log(num[i]);
     if (num[i] === 10) {
         break;
     }
-    console.log(num[i]);
 }
 
 //h2
@@ -40,7 +40,7 @@ num5.sort();
 const num6 = [9, 8, 7, 6, 5];
 let question = +(prompt('Угадайте число, которое содержится в массике.', 1));
 
-let answer = (num6.indexOf(question) >= 0) ? 'Угадал': 'Не угадал';
+let answer = (num6.indexOf(question) >= 0) ? 'Угадал' : 'Не угадал';
 
 console.log(answer);
 
@@ -48,28 +48,21 @@ console.log(answer);
 let stringAlphabet = 'abcdef';
 const num7 = stringAlphabet.split('');
 num7.reverse();
-stringAlphabet = '';
-for (let el of num7) {
-    stringAlphabet += el;
-}
+stringAlphabet = num7.join('');
+
 console.log(stringAlphabet);
 
 //h9
-const num8 = [[1, 2, 3,],[4, 5, 6]];
-const newArray = [];
+const num8 = [[1, 2, 3,], [4, 5, 6]];
+const newArray = num8.flat();
 
-for (let i of num8) {
-    for (let b of i) {
-        newArray.push(b);
-    }
-}
 console.log(newArray);
 
 //h10
 const newArray1 = [1, 2, 4, 6, 5];
 
 for (let i = 0; i < newArray1.length; i++) {
-    console.log(i <= (newArray1.length - 2) ? newArray1[i] + newArray1[i + 1]: newArray1[i]);
+    console.log(i <= (newArray1.length - 2) ? newArray1[i] + newArray1[i + 1] : newArray1[i]);
 }
 
 //h11
@@ -82,57 +75,43 @@ const doubleNum = (array) => {
 }
 //2 способ
 const doubleNum1 = (array) => {
-    const newArray = array.map(function (nums) {
-    return nums * nums;
-    })
-    return newArray;
+    array = array.map(x => x * x);
+    return array;
 }
+doubleNum1([2, 4, 6]);
 
 //h12
 const stringLength = (array) => {
-    const newArray = [];
-    let i = 0;
-    for (let elem of array) {
-        newArray[i] = elem.length;
-        i++;
-    }
-    return newArray;
+    array = array.map(x => x.length);
+    return array;
 }
 
 //h13
 function filterPositive(array) {
-    const newArray = [];
-    let i = 0;
-    for (let elem of array) {
-        if (elem < 0) {
-            newArray[i] = elem;
-            i++
-        }
-    }
-    return newArray;
-  }
+    return array = array.filter(x => x < 0);
+}
 
-  //h14
-  const newArray14 = [];
-  const evenNumber = [];
-  
-  for (let i = 0; i < 10; i++) {
+//h14
+const newArray14 = [];
+const evenNumber = [];
+
+for (let i = 0; i < 10; i++) {
     newArray14[i] = Math.round(Math.random() * 10);
     if (newArray14[i] % 2 == 0) {
         evenNumber.push(newArray14[i]);
     }
-  }
+}
 
-  console.log(newArray14);
-  console.log(evenNumber);
-  
-  //h15
-  const newArray15 = [];
-  let result = 0;
+console.log(newArray14);
+console.log(evenNumber);
 
-  for (let i = 0; i < 6; i++) {
+//h15
+const newArray15 = [];
+let result = 0;
+
+for (let i = 0; i < 6; i++) {
     newArray15[i] = Math.round(Math.random() * 9 + 1);
     result += newArray15[i];
-  }
-  console.log(result);
-  console.log(result / newArray15.length);
+}
+console.log(result);
+console.log(result / newArray15.length);
