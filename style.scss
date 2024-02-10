@@ -165,5 +165,18 @@ body {
     min-height: 333px;
 }
 
+.words-img {
+    background: url(img/words.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.seasons-box__words {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
 
 @import "mobile";
