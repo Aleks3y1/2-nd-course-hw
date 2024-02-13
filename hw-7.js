@@ -2,17 +2,10 @@
 let elem = 'строка EMPTY'.toUpperCase();
 
 //h2
-const searchStart = (array, a) => {
-    let regex = new RegExp(`${a}`, 'gi');
-    const newArray = [];
-    array.forEach(element => {
-        if (regex.test(element)) {
-            newArray.push(element);
-        }
-    });
-    return newArray;
+function filterString(str, startsWith) {
+    return str.filter(item =>
+        item.toLowerCase().startswith(startsWith.toLowerCase()));
 }
-
 //h3
 let num = Math.floor(32.58884);
 num = Math.ceil(32.58884);
@@ -51,20 +44,20 @@ const currentDateInRu = (currentDate) => {
 const fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
 const wordsGame = () => {
-fruits.sort(() => Math.random() - 0.5);
+    fruits.sort(() => Math.random() - 0.5);
+    alert(fruits);
+    let answer1 = prompt('Чему равнялся первый элемент массива?');
+    let answer2 = prompt('Чему равнялся последний элемент массива?');
 
-let answer1 = prompt('Чему равнялся первый элемент массива?');
-let answer2 = prompt('Чему равнялся последний элемент массива?');
-
-switch (true) {
-    case answer1 === fruits[0] && answer2 === fruits[fruits.length - 1]:
-        alert('Поздравляем! Вы угадали первый элемент массива и последний элемент массива!');
-        break;
-    case answer2 === fruits[fruits.length - 1] || answer1 === fruits[0]:
-        alert('Вы были близки к победе!');
-        break;
-    default:
-        alert('Увы. Вы ошиблись. Попробуйте еще раз.');
-        break;
-}
+    switch (true) {
+        case answer1 === fruits[0] && answer2 === fruits[fruits.length - 1]:
+            alert('Поздравляем! Вы угадали первый элемент массива и последний элемент массива!');
+            break;
+        case answer2 === fruits[fruits.length - 1] || answer1 === fruits[0]:
+            alert('Вы были близки к победе!');
+            break;
+        default:
+            alert('Увы. Вы ошиблись. Попробуйте еще раз.');
+            break;
+    }
 }
